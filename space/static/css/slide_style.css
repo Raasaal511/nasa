@@ -1,0 +1,190 @@
+.image-slide {
+    padding: 0 50px;
+}
+
+.slider {
+    position: relative;
+    padding: 0 50px;
+}
+
+
+.slick-track {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+/* arrows  */
+.slick-prev {
+    left: 0;
+    font-size: 0;
+    width: 35px;
+    background: url('../img/arrows/left.png') 0 0 / 100% no-repeat;
+}
+
+.slick-next {
+    right: 0;
+    font-size: 0;
+    background: url('../img/arrows/right.png') 0 0 / 100% no-repeat;
+
+}
+
+
+/* end arrows  */
+
+
+.slide__item {
+
+}
+
+.slide__item img {
+    margin: 0 auto;
+}
+
+
+/* copy */
+
+
+.wrapper{
+	height: 100%;
+	padding: 30px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+
+@media (max-width:767px){
+	.wrapper{padding: 30px 10px;}
+}
+
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider{
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slider > .slick-list {
+    overflow: hidden;
+    max-width: 1440px !important;
+}
+
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items:  center;
+}
+
+
+.slider {
+	position: relative;
+	padding: 0px 60px;
+}
+
+@media (max-width:767px){
+	.slider {
+		padding: 0px 40px;
+	}
+}
+
+.slider {}
+
+.full-screen-sliderbig {
+
+}
+
+.full-screen-sliderbig > .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 40px;
+    height: 45px;
+    border: none;
+}
+
+.full-screen-sliderbig > .slick-prev {
+    left: 3%;
+}
+
+.full-screen-sliderbig > .slick-next {
+    right: 3%;
+}
+
+.slider > .slick-arrow{
+	position: absolute;
+	top: 50%;
+	margin: -30px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 30px;
+	height: 60px;
+    border: none;
+
+}
+
+
+
+.slider__item {
+	padding: 0px 15px;
+	width: auto;
+}
+
+.sliderbig__item {
+
+}
+.sliderbig__item img{
+    margin: 0 auto;
+}
+.slider__item img{
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+.fullscreen-view {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20,20, 20, 0.7);
+    z-index: 9999;
+}
+
+.full-screen-sliderbig > .slick-list > .slick-track {
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.slick-slide img {
+    margin: auto;
+    border-radius: 25px;
+
+}
+
+.full-screen-image {
+    margin: auto;
+}
+
+
+
+.full-screen-sliderbig__item {
+    margin-top: 110px;
+
+}
+
+
+.full-screen-sliderbig__item img {
+    width: 1050px;
+    height: 720px;
+}

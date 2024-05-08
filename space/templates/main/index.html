@@ -1,0 +1,227 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>{% block title %}{% endblock %}</title>
+  {% load django_bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/slide_style.css' %}"/>
+</head>
+<body>
+
+      <div class="p-2" style="background: #0A121E">
+          <div class="container">
+            <ul class="nav justify-content-between align-items-center">
+              <li class="nav-item">
+                <a class="nav-link link-light p-0" href="{% url 'main' %}">
+                  <img src="{% static 'img/logo.png' %}" alt="" width="105" height="54  ">
+                </a>
+              </li>
+
+              <div class="d-flex">
+                <li class="nav-item">
+                  <a class="nav-link link-light" href="#">ПРЕИМУЩЕСТВА</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link link-light" href="#">ФОТОГРАФИИ</a>
+                </li>
+              </div>
+              <li class="nav_item">
+                <a class="btn btn-danger" href="#">ВХОД</a>
+              </li>
+            </ul>
+
+          </div>
+      </div>
+      <div class="mt-5 mb-5 w-1"><a class="nav-link link-light">.</a></div>
+
+      <div class="container mt-5 mb-5">
+        <div class="text-center col-6 m-auto">
+          <h1 class=" fs-1">Космическое агентство</h1>
+          <p>Национальное управление по аэронавтике и исследованию космического пространства — ведомство, относящееся к федеральному правительству США и подчиняющееся непосредственно президенту США.</p>
+        </div>
+        <div class="mt-5 mb-5 w-1"><a class="nav-link link-light">.</a></div>
+
+
+
+
+
+
+        <div class="info mt-5 d-flex justify-content-around flex-wrap">
+          <div class="info-block">
+
+            <div class="d-flex row">
+              <div class="info-items text-center col">
+              <img class="" src="{% static 'img/racet.png' %}" alt="" width="64" height="64">
+              <p>Спейс шаттлы —пилотируемые корабли</p>
+              </div>
+
+              <div class="info-items text-center col">
+              <img src="{% static 'img/telescope.png' %}" alt="" width="64" height="64">
+              <p>Лучшее телескопическое оборудование</p>
+              </div>
+            </div>
+        <div class="mt-5 mb-5 w-1"><a class="nav-link link-light">.</a></div>
+
+          <div class="d-flex row mb-5">
+            <div class="info-items text-center col">
+            <img src="{% static 'img/moon.png' %}" alt="" width="64" height="64">
+            <p>Целимся на Луну  и Марс</p>
+            </div>
+
+            <div class="info-items text-center col">
+            <img src="{% static 'img/medal.png' %}" alt="" width="64" height="64">
+            <p>Золотая медаль  по научным исследованиям</p>
+            </div>
+          </div>
+
+          </div>
+
+
+          <div class="info-block m-auto">
+            <img src="{% static 'img/space_img.png' %}" alt="" width="457">
+          </div>
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+      </div>
+
+
+<div>
+    <!--   <div class="slide-bg pt-5 pb-5" style="background: #3C3C3C;">-->
+<!--        <div class="text-center pt-5 pb-3 text-white">-->
+<!--            <h2>Фотографии</h2>-->
+<!--        </div>-->
+
+<!--        <div class="sliderbig">-->
+<!--            <div class="sliderbig__item filter thumbnail">-->
+<!--                <img class="sliderbig__item-img" src="{% static 'img/space_img.png' %}" alt="" width="760" height="555">-->
+<!--            </div>-->
+<!--            <div class="sliderbig__item thumbnail">-->
+<!--                <img class="sliderbig__item-img"  src="{% static 'img/space_img.png' %}" alt="" width="760" height="555">-->
+<!--            </div>-->
+<!--            <div class="sliderbig__item filter thumbnail">-->
+<!--                <img class="sliderbig__item-img" src="{% static 'img/space_img.png' %}" alt="" width="760" height="555">-->
+<!--            </div>-->
+<!--            <div class="sliderbig__item thumbnail">-->
+<!--                <img class="sliderbig__item-img" src="{% static 'img/space_img.png' %}" alt="" width="760" height="555">-->
+<!--            </div>-->
+<!--            <div class="sliderbig__item thumbnail">-->
+<!--                <img class="sliderbig__item-img" src="{% static 'img/space_img.png' %}" alt="" width="760" height="555">-->
+<!--            </div>-->
+<!--            <div class="sliderbig__item thumbnail">-->
+<!--                <img class="sliderbig__item-img" src="{% static 'img/space_img.png' %}" alt="" width="760" height="555">-->
+<!--            </div>-->
+<!--            <div class="sliderbig__item thumbnail">-->
+<!--                <img class="sliderbig__item-img" src="{% static 'img/space_img.png' %}" alt="" width="760" height="555">-->
+<!--            </div>-->
+<!--            <div class="sliderbig__item">-->
+<!--                <img class="sliderbig__item-img" src="{% static 'img/space_img.png' %}" alt="" width="760" height="550">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="fullscreen-view">-->
+<!--            <div class="full-screen-sliderbig">-->
+<!--                <div class="full-screen-sliderbig__item">-->
+<!--                <img src="{% static 'img/space_img.png' %}" class="full-screen-image">-->
+<!--                </div>-->
+<!--                <div class="full-screen-sliderbig__item">-->
+<!--                <img src="{% static 'img/space_img.png' %}" class="full-screen-image">-->
+<!--                </div>-->
+<!--                <div class="full-screen-sliderbig__item">-->
+<!--                <img src="{% static 'img/space_img.png' %}" class="full-screen-image">-->
+<!--                </div>-->
+<!--                <div class="full-screen-sliderbig__item">-->
+<!--                <img src="{% static 'img/space_img.png' %}" class="full-screen-image">-->
+<!--                </div>-->
+<!--                <div class="full-screen-sliderbig__item">-->
+<!--                <img src="{% static 'img/space_img.png' %}" class="full-screen-image">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <span class="close-button">&times;</span>-->
+<!--        </div>-->
+<!--        <div class="wrapper slider-tog">-->
+<!--        <div class="slider">-->
+<!--            <div class="slider__item filter">-->
+<!--                <img src="{% static 'img/space_img.png' %}" alt="" width="195" height="175">-->
+<!--            </div>-->
+<!--            <div class="slider__item">-->
+<!--                <img src="{% static 'img/space_img.png' %}" alt="" width="195" height="175">-->
+<!--            </div>-->
+<!--            <div class="slider__item filter">-->
+<!--                <img src="{% static 'img/space_img.png' %}" alt="" width="195" height="175">-->
+<!--            </div>-->
+<!--            <div class="slider__item">-->
+<!--                <img src="{% static 'img/space_img.png' %}" alt="" width="195" height="175">-->
+<!--            </div>-->
+<!--                        <div class="slider__item">-->
+<!--                <img src="{% static 'img/space_img.png' %}" alt="" width="195" height="175">-->
+<!--            </div>-->
+<!--                        <div class="slider__item">-->
+<!--                <img src="{% static 'img/space_img.png' %}" alt="" width="195" height="175">-->
+<!--            </div>-->
+<!--                        <div class="slider__item">-->
+<!--                <img src="{% static 'img/space_img.png' %}" alt="" width="195" height="175">-->
+<!--            </div>-->
+<!--                        <div class="slider__item">-->
+<!--                <img src="{% static 'img/space_img.png' %}" alt="" width="195" height="175">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        </div>-->
+<!--   </div>-->
+</div>
+
+
+         <div class="slide-bg pt-5 pb-5" style="background: #3C3C3C;">
+        <div class="text-center pt-5 pb-3 text-white">
+            <h2>Фотографии</h2>
+        </div>
+
+        <div class="sliderbig">
+            {% for obj in space_image_filter.qs %}
+                <div class="sliderbig__item filter thumbnail">
+                    <img class="sliderbig__item-img" src="{{ obj.url.url }}" alt="" width="760" height="555">
+                </div>
+            {% endfor %}
+
+        </div>
+
+        <div class="fullscreen-view">
+            <div class="full-screen-sliderbig">
+            {% for obj in space_image_filter.qs %}
+                 <div class="full-screen-sliderbig__item">
+                <img src="{{ obj.url.url }}" class="full-screen-image">
+                </div>
+            {% endfor %}
+             </div>
+            <span class="close-button">&times;</span>
+        </div>
+        <div class="wrapper slider-tog">
+        <div class="slider">
+            {% for obj in space_image_filter.qs %}
+                <div class="slider__item filter">
+                    <img src="{{ obj.url.url }}" alt="" width="195" height="175">
+                </div>
+            {% endfor %}
+        </div>
+        </div>
+   </div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
